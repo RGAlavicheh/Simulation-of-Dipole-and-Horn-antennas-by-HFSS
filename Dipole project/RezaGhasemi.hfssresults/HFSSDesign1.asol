@@ -1,0 +1,207 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002019, month=000000000006, day=000000000022, hour=000000000014, min=000000000029, sec=000000000044)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000004966, lin=000000000185, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=13
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=348
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='L=\'50cm\'', ID=196)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=196, Ver=13, Dir='DV196_V13.imesh/')
+	$end 'InitialMeshes'
+	$begin 'LumpedPortDimensions'
+		DIMS(VID=196, Ver=13, D=0, D=0.02, D=0.009999999999999999)
+	$end 'LumpedPortDimensions'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=196, Ver=13, Dir='DV196_MI0_V13.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=15, Instance=\'L=\\\'50cm\\\'\', Solution=-3, VersionID=0)'='SolutionBlock6'
+	'SolutionKey(SimSetup=15, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock5'
+	'SolutionKey(SimSetup=15, Instance=\'SolutionDefinition\', Solution=16, VersionID=174)'='SolutionBlock3'
+	'SolutionKey(SimSetup=15, Instance=\'SolutionDefinition\', Solution=17, VersionID=174)'='SolutionBlock4'
+	'SolutionKey(SimSetup=15, Instance=\'SolutionDefinition\', Solution=52, VersionID=174)'='SolutionBlock2'
+$end 'BlockMapName'
+$begin 'SolutionBlock3'
+	SolutionName='AdaptivePass'
+	SolutionID=16
+	V=174
+	$begin 'States'
+		F(VID=196, Ver=174)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=196, Ver=174, File='DV196_SOL16_M1_V174.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=196, Ver=174, File='DV196_SOL16_M2_V174.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=196, Ver=174, File='DV196_SOL16_M3_V174.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'A'
+		$begin 'SubData'
+			ID=0
+			A(VID=196, Ver=174, File='DV196_SOL16_A0_V174.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			A(VID=196, Ver=174, File='DV196_SOL16_A1_V174.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			A(VID=196, Ver=174, File='DV196_SOL16_A2_V174.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			A(VID=196, Ver=174, File='DV196_SOL16_A3_V174.sd')
+		$end 'SubData'
+	$end 'A'
+$end 'SolutionBlock3'
+$begin 'SolutionBlock4'
+	SolutionName='LastAdaptive'
+	SolutionID=17
+	V=174
+	$begin 'States'
+		F(VID=196, Ver=174)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=196, Ver=174, File='DV196_SOL17_M0_V174.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(214, 1000000000)
+		$begin 'DataMap'
+			VID=196
+			Ver=174
+			F(DblID=214, Dir='DV196_S17_V174_F214/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock4'
+$begin 'SolutionBlock2'
+	SolutionName='Sweep'
+	SolutionID=52
+	V=174
+	$begin 'States'
+		F(VID=196, Ver=174)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(200000000, 300000000, 400000000, 500000000, 600000000, 700000000, 800000000, 900000000, 1000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=196, Ver=174, File='DV196_SOL52_M0_V174.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock5'
+	SimSetupID=15
+	SimSetupName='Setup1'
+	VersionID=0
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=196, Ver=0, Dir='DV196_S15_V0.cmesh/')
+	$end 'CurrMeshes'
+	$begin 'RadFieldSurfMeshes'
+		SM(VID=196, Ver=0, Dir='DV196_S15_V0.sfmesh/')
+	$end 'RadFieldSurfMeshes'
+	$begin 'WaveAdapt'
+		WA(VID=196, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=196, Ver=0, P=3)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=196, Ver=0, File='DV196_S15_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=196, Ver=0, Dir='DV196_S15_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock5'
+$begin 'SolutionBlock6'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='10'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(numtets=3493, passno=1)
+	c(numtets=4262, passno=2, magdeltas=0.02544133375569673)
+	c(numtets=5254, passno=3, magdeltas=0.0128903143671709)
+$end 'SolutionBlock6'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock6(pos=4616, lin=173, lvl=0)
+		BlockMapName(pos=996, lin=27, lvl=0)
+		SolutionBlock3(pos=1586, lin=35, lvl=0)
+		SolutionBlock4(pos=2695, lin=86, lvl=0)
+		SolutionBlock2(pos=3356, lin=119, lvl=0)
+		SolutionBlock5(pos=3935, lin=144, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=4966, lin=185, lvl=0)
+	$end '$index$'
+$end '$index$'
